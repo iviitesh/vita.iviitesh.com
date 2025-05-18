@@ -67,6 +67,37 @@
             padding: 0px;
             margin-top: 8px;
         }
+
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 8px 13px;
+            padding: 8px;
+        }
+        
+        .skills-row {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            align-items: start;
+            gap: 13px;
+        }
+        
+        .skills-row ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 13px;
+        }
+        
+        .skills-row ul li {
+            background-color: #cce7ff;
+            padding: 4px 8px;
+            border-radius: 8px;
+            white-space: nowrap;
+        }
         
         
     </style>
@@ -86,14 +117,32 @@
 
         <section>
             <h2>Skills</h2>
-            <p><strong>Core:</strong>Multi-Stakeholder Project Management, Cross-Functional Team Collaboration, Technical Content Creation</p>
-            <p><strong>Software:</strong> General Programming, Scientific Computing, Machine Learning, Web Development
-                <ul>
-                    <li>C++1x/2y (CMake), Python, Mathematica, HTML/CSS/JavaScript, TeX, git, Linux</li>
-                    <li>MathWorks: MATLAB, Simulink, Simscape, Stateflow</li>    
-                </ul>
-            <p><strong>Languages:</strong> English, French, German, Gujarati, Hindi</p>
+            <section class="skills-grid">
+                
+                <section class="skills-row">
+                    <strong>Core</strong>
+                    <ul>
+                        <li>Mult-Stakeholder Project Management</li>
+                        <li>Cross-Functional Team Collaboration</li>
+                        <li>Customer/Client Relationships</li>
+                    </ul>
+                </section>
+
+                <section class="skills-row">
+                    <strong>Software</strong>
+                    <ul>
+                        <li>C++1x/2y</li>
+                        <li>Python</li>
+                        <li>HTML/CSS/JavaScript</li>
+                        <li>MATLAB & Simulink</li>
+                        <li>Mathematica</li>
+                    </ul>
+                </section>
+            </section>
+            
         </section>
+
+        
 
         <section>
             <h2>Experience</h2>
@@ -101,14 +150,16 @@
             <section class="block">
             <h3 class="block-title">Technical | Speedgoat (MathWorks Group)</h3>
             <p class="block-subtitle">Munich (DE) and Bern (CH) // 2024--Present</p>
-            <p class="block-introduction">Real-Time Plant Simulation and Control Testing Solutions for the MathWorks Stack</p>
+            <p class="block-introduction">Developing embedded control software using real-time plant simulators and prototype controllers for automotive, aerospace, energy, robotics, and healthcare sectors.</p>
             <ul class="block-list">
-               
                 <li>Crafting 50+ pieces of customer-facing content for webpages, webinars, workflow demos, social media, newsletters, articles, and e-commerce ad copy</li>
                 <li>Boosting brand awareness with ~25% organic growth in followers under 6 months with an automated post scheduling plan that synchronises global events, releases, and influencers</li>
                 <li>Generating 250+ qualified leads to meet KPI targets as booth staff alongside Technical Sales and Application Engineering colleagues at a major trade show</li>               
                 <li>Fostering communication between customers, third-party connections, and C-suite executives in authoring key marketing collaterals such as joint media releases and success stories</li>
                 <li>Managing 4 multi-channel campaigns to launch next-generation products with countdowns, teasers, and announcements on different platforms</li>
+                <li>Web Development</li>
+                <li>Webinar</li>
+                <li>Databases</li>
                 <li>Redefining processes with metrics informed-messaging, customer-centric storytelling, and use case empathy to enhance engagement, conversion, and adoption at various touch points</li>
             </ul>
             </section>
