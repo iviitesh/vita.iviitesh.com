@@ -102,12 +102,16 @@
         
         .toc ul {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 13px;
         }
 
         .toc ul li {
             padding: 4px 8px;
+            white-space: nowrap;
         }
         
     </style>
@@ -122,15 +126,16 @@
     <main>
         <section class="brief">
             <img id="headshot" src="assets/headshot.jpg" alt="headshot">
-            <p id="about">Multidisciplinary background intersecting physics, medicine, and computing. Broad interests spanning bio/med/health-tech innovations with applied focus on modelling, simulation, and informatics. Specialist experience in scientific software, industrial research, and academic enterprise as well as technical product marketing across digitalisation, electrification, and automation.</p>
+            <p id="about">Multidisciplinary background intersecting physics, medicine, and computing. Broad interests spanning Bio/Med/Health-Tech innovations with applied focus on modelling, simulation, and informatics. Specialist experience in scientific software, industrial research, and academic enterprise as well as technical product marketing across digitalisation, electrification, and automation.</p>
         </section>
 
         <section class="toc">
             <ul>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience"></a>Experience</li>
-                <li><a href="#education"></a>Education</li>
-                <li><a href="#portfolio"></a>Portfolio</li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </section>
 
@@ -162,7 +167,9 @@
                     <strong>Stack</strong>
                     <ul>
                         <li>C++1x/2y</li>
+                        <li>CMake</li>
                         <li>Python</li>
+                        <li>PyTorch</li>
                         <li>MATLAB</li>
                         <li>Simulink</li>
                         <li>Simscape</li>
@@ -170,6 +177,8 @@
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
+                        <li>Ruby</li>
+                        <li>SQL</li>
                         <li>Mathematica</li>
                         <li>TeX</li>
                         <li>Shell</li>
@@ -219,7 +228,7 @@
             <h2>Experience</h2>
 
             <section class="block">
-            <h3 class="block-title">Technical | Speedgoat (MathWorks Group)</h3>
+            <h3 class="block-title">Technical Marketing Specialist | Speedgoat (MathWorks Group)</h3>
             <p class="block-subtitle">Munich (DE) and Bern (CH) // 2024--Present</p>
             <p class="block-introduction">Developing embedded control software using real-time plant simulators and prototype controllers for automotive, aerospace, energy, robotics, and healthcare sectors.</p>
             <ul class="block-list">
@@ -279,14 +288,31 @@
         </section>
 
             <section id="education">
-         
+
                 <h2>Education</h2>
-                <p><strong>Columbia University in the City of New York (US)</strong></p>  
-                <p>Medicine: Medical Sciences incl. Chemistry, Psychology, and Anthropology</p>  
-                <p><strong>Imperial College London (UK)</strong></p>   
-                <p>Doctorate: Ph.D. in Computational Engineering Sciences (Physics)</p>
-                <p>Masters: M.Sc. with Distinction (Valedictorian) in Computational Engineering Sciences (Physics)</p>   
-                <p>Bachelors/Masters: B.Sc./M.Sci. with First Class Honours in Mathematical and Theoretical Physics</p>
+
+                <section class="block">
+                    <h3 class="block-title">Columbia University in the City of New York</h3>
+                    <p class="block-subtitle"> New York (US) </p>
+                    <p class="block-introduction">Medicine: Medical Sciences w/ Computer Science</p>
+                    <ul class="block-list">
+                        <li><strong>Placements:</strong> Otorhinolaryngology, Radiology, Oncology, Cytology, Psychiatry, Gynecology &amp; Obstetrics, General Surgery, General Practice, and Community Healthcare</li>
+                        <li><strong>Courses:</strong> General and Organic Chemistry, Psychology, and Anthropology</li>
+                        <li><strong>Volunteering:</strong>Previous appointed roles incl. pastoral care, welfare, and first aid at student halls of residence, outpatient support at cancer centre, and befriending services of national suicide helplines.</li>
+                    </ul>
+                </section>
+
+                <section class="block">
+                    <h3 class="block-title">Imperial College London </h3>
+                    <p class="block-subtitle"> London (UK) </p>
+                    <p class="block-introduction">Multidisciplinary studies across the Departments of Physics (Royal College of Science), Mechanical Engineering (City &amp; Guilds College), and Materials (Royal School of Mines)</p>
+                    <ul class="block-list">       
+                        <li><strong>Doctorate:</strong>Ph.D. in Computational Engineering Sciences (Physics)</li>        
+                        <li><strong>Masters:</strong>M.Sc. with Distinction (Valedictorian) in Computational Engineering Sciences (Physics)</li>
+                        <li><strong>Bachelors/Masters:</strong>B.Sc./M.Sci. with First Class Honours in Mathematical and Theoretical Physics</li>
+                   </ul>    
+                </section>
+         
             </section>
 
 
@@ -301,14 +327,13 @@
                    <li>Computer Vision-Assisted Cytopathology: Semantic Segmentation of Cancer Cells</li>
                </ul>
 
-  
                <h3>Publications</h3>
                <ul>
-                   <li><a href="https://scholar.google.co.uk/citations?user=ASqPygUAAAAJ&hl=en">Google Scholar</a></li>
                    <li><a href="https://www.sciencedirect.com/science/article/pii/S0927025621000045">Efficient Atomic-to-Mesoscopic Modelling of Microstructural Evolution</a></li>
                    <li><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.94.241112"><em>Ab Initio</em> Quantum Mechnical Simulations of Defect Elastostatics</a></li>
                    <li><a href="https://link.springer.com/article/10.1557/adv.2017.452">Computational Micromechanics of Thermal Hysteresis</a></li>
                    <li><a href="https://core.ac.uk/download/pdf/554492848.pdf">Multiscale Modelling of Diffusion-Precipitation-Fracture Failure Mechanism</a></li>
+                   <li><a href="https://scholar.google.co.uk/citations?user=ASqPygUAAAAJ&hl=en">Google Scholar</a></li>
                </ul>
 
                <h3>Awards</h3>
@@ -329,6 +354,11 @@
                <h3>Causes</h3>
                <p>Open Education, Open Science, Open-Source Software, and Open Access</p>
            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p><a href="https://linkedin.com/">LinkedIn</a></p>
+            </section>
 
     </main>
 
